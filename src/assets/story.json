@@ -1,32 +1,32 @@
 [
   {
-    "image": "Village_Africain2.jpg",
+    "image": "Village_Africain2.092ea9e0.jpg",
     "text": "Tu tousses, tu perds du poids, et tu as des sueurs, tu n'as pas l'air en pleine forme ! Tu devrais consulter.",
     "children": [4, 8, 5]
   },
   {
-    "accessImage": "Medecin.png",
+    "accessImage": "Medecin.f9049a43.png",
     "accessQuestion": "Je décide de suivre la phase de traitement de 6 mois",
-    "image": "CentreMedical_Cartoon.png",
+    "image": "CentreMedical_Cartoon.10d30977.png",
     "text": "Le traitement suit sont cours, la prise de médicament est journalière",
     "days": 1,
     "health": -10,
     "children": [9, 10, 39]
   },
   {
-    "image": "Village_Africain2.jpg",
+    "image": "Village_Africain2.092ea9e0.jpg",
     "text": "La maladie s'aggrave, la tuberculose devient multi-résistante",
     "multidrugResistantTuberculosis": true,
     "days": 3,
     "children": [4, 8, 5]
   },
   {
-    "image": "CentreMedical_Cartoon.png",
+    "image": "CentreMedical_Cartoon.10d30977.png",
     "text": "Le medecin vous osculte, les analyses prennent plusieurs jours.... J'ai le résultat de vos analyses. Il s'agit de la tuberculose. Nous avons un traitement anti-microbien gratuit, il faudra le prendre pendant 6 mois.",
     "children": [9, 1]
   },
   {
-    "accessImage": "Fermier.svg",
+    "accessImage": "Fermier.3d3a4b2c.svg",
     "accessQuestion": "Je continue mon travail et gagne 30 credits",
     "money": 30,
     "days": 4,
@@ -34,14 +34,14 @@
     "children": [2]
   },
   {
-    "accessImage": "Mask.svg",
+    "accessImage": "Mask.c24b2007.svg",
     "accessQuestion": "je vais chez un guerisseur",
-    "image": "Guerrisseur.png",
+    "image": "Guerrisseur.ce75f8ee.png",
     "health": -10,
     "children": [4, 8, 11]
   },
   {
-    "accessImage": "bus.svg",
+    "accessImage": "bus.a38ccc5d.svg",
     "accessQuestion": "je prends le bus pour 5 credits",
     "money": -5,
     "days": 1,
@@ -49,36 +49,36 @@
     "children": [3]
   },
   {
-    "accessImage": "walk.svg",
+    "accessImage": "walk.93a63ba4.svg",
     "accessQuestion": "je vais chez le médecin à pieds, mais je perds 4 jours",
     "days": 4,
     "health": -40,
     "children": [3]
   },
   {
-    "accessImage": "hospital.svg",
+    "accessImage": "hospital.b5c9e2e4.svg",
     "accessQuestion": "je vais au centre de santé",
-    "image": "Village_Africain2.jpg",
+    "image": "Village_Africain2.092ea9e0.jpg",
     "text": "Le premier centre de santé est à 50 km. Que faire?",
     "days": 1,
     "health": -10,
     "children": [6, 7]
   },
   {
-    "accessImage": "Fermier.svg",
+    "accessImage": "Fermier.3d3a4b2c.svg",
     "accessQuestion": " Le traitement est bien trop long et je ne peux quitter ma famille/mon travail.",
     "days": 4,
     "health": -5,
     "children": [2]
   },
   {
-    "accessImage": "pill.svg",
+    "accessImage": "pill.70d277b3.svg",
     "accessQuestion": "Je suis le traitement jusqu'au bout",
     "sceneKey": "DefeatTeeBeeScene",
     "children": [37]
   },
   {
-    "accessImage": "herbs.svg",
+    "accessImage": "herbs.fc289f83.svg",
     "accessQuestion": "Je choisis la médecine traditionnelle et décide de prendre les herbes proposées par le guérisseur, coût 50credits",
     "money": -50,
     "health": -30,
