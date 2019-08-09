@@ -120,7 +120,7 @@ export class DynamicScene extends Phaser.Scene implements SceneCommon {
     // this.load.image(`medecin`, require("../assets/Medecin.png"));
     // this.load.image(`village`, require("../assets/Village_Africain2.jpg"));
     // this.load.image(`walk`, require("../assets/walk.svg"));
-    // this.load.image(`parchment`, require("../assets/parchment.png"));
+    this.load.image(`parchment`, require("../assets/parchment.png"));
 
     if (this.storyData.image) {
       this.load.image(`mainImage`, `${this.storyData.image}`);
@@ -133,6 +133,7 @@ export class DynamicScene extends Phaser.Scene implements SceneCommon {
         let childStoryData = storyDataArray[indexChildStoryData];
 
         if (childStoryData.accessImage) {
+          console.log(`Debug load image : ${childStoryData.accessImage}`);
           this.load.image(
             `accessImage${indexAccess}`,
             `${childStoryData.accessImage}`
