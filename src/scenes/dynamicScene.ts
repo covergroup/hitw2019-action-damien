@@ -114,7 +114,7 @@ export class DynamicScene extends Phaser.Scene implements SceneCommon {
     if (this.storyData.image) {
       this.load.image(
         `mainImage`,
-        require("../assets/${this.storyData.image}")
+        `${this.storyData.image}`)
       );
     }
 
@@ -127,7 +127,7 @@ export class DynamicScene extends Phaser.Scene implements SceneCommon {
         if (childStoryData.accessImage) {
           this.load.image(
             `accessImage${indexAccess}`,
-            `${this.imageBasePath}${childStoryData.accessImage}`
+            `${childStoryData.accessImage}`
           );
         }
         indexAccess++;
@@ -254,9 +254,7 @@ export class DynamicScene extends Phaser.Scene implements SceneCommon {
         this.updateParchmentScaleAndPosition(nextButton, parchmentSprite);
 
         if (childStoryData.accessImage) {
-          let sprite = this.add
-            .sprite(0, 0, `accessImage${indexAccess}`)
-            .setInteractive();
+          let sprite = this.add.sprite(0, 0, `${indexAccess}`).setInteractive();
           let scaleX = this.computeScaleX(
             this.cameras.main.width / 7,
             sprite.width
