@@ -21,11 +21,14 @@ export class GameStateScene extends Phaser.Scene {
   }
 
   preload(): void {
-    this.load.image("scene-bg-state", "../assets/game-state-background.png");
+    this.load.image(
+      "scene-bg-state",
+      require("../assets/game-state-background.svg")
+    );
     this.load.bitmapFont(
       "azoFire",
-      "../assets/azo-fire.png",
-      "../assets/azo-fire.xml"
+      require("../assets/azo-fire.png"),
+      require("../assets/azo-fire.xml")
     );
   }
 

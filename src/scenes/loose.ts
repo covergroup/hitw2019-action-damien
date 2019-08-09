@@ -20,18 +20,19 @@ export class YouLooseScene extends Phaser.Scene {
   }
 
   preload(): void {
+    
     this.load.image(
       "scene-bg-loose",
-      "../assets/game-youloose-background.jpg"
+      require("../assets/game-youloose-background.jpg")
     );
     this.load.bitmapFont(
       "azoFire",
-      "../assets/azo-fire.png",
-      "../assets/azo-fire.xml"
+      require("../assets/azo-fire.png"),
+      require("../assets/azo-fire.xml")
     );
     this.load.audio("loose", [
-      "../assets/albinoni.wav",
-      "../assets/albinoni.wav"
+      require("../assets/albinoni.wav"),
+      require("../assets/albinoni.wav")
     ]);
   }
 

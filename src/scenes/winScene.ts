@@ -20,18 +20,15 @@ export class YouWinScene extends Phaser.Scene {
   }
 
   preload(): void {
-    this.load.image(
-      "scene-bg-loose",
-      "../assets/Fin_Heureuse.png"
-    );
+    this.load.image("scene-bg-loose", require("../assets/Fin_Heureuse.png"));
     this.load.bitmapFont(
       "azoFire",
-      "../assets/azo-fire.png",
-      "../assets/azo-fire.xml"
+      require("../assets/azo-fire.png"),
+      require("../assets/azo-fire.xml")
     );
     this.load.audio("win", [
-      "../assets/Fin_Heureuse.mp3",
-      "../assets/Fin_Heureuse.mp3"
+      require("../assets/Fin_Heureuse.mp3"),
+      require("../assets/Fin_Heureuse.mp3")
     ]);
   }
 

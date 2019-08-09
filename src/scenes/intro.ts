@@ -19,13 +19,10 @@ export class IntroScene extends Phaser.Scene {
   }
 
   preload(): void {
-    this.load.image("scene-bg", "../assets/intro-background.jpg");
-    this.load.image(
-      "logo-damien",
-      "../assets/logo_Action_damien.jpg"
-    );
-    this.load.image("logo-hack", "../assets/logohack.jpg");
-    this.load.image("logo-cover", "../assets/LogoCover.png");
+    this.load.image("scene-bg", require("/assets/intro-background.jpg"));
+    this.load.image("logo-damien", require("/assets/logo_Action_damien.jpg"));
+    this.load.image("logo-hack", require("/assets/logohack.jpg"));
+    this.load.image("logo-cover", require("/assets/LogoCover.png"));
   }
 
   init(): void {

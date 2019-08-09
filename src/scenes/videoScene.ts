@@ -16,10 +16,7 @@ export class VideoScene extends Phaser.Scene {
   }
 
   preload(): void {
-    this.load.image(
-      "logo-damien",
-      "../assets/logo_Action_damien.jpg"
-    );
+    this.load.image("logo-damien", require("../assets/logo_Action_damien.jpg"));
   }
 
   init(storyDynamicScene: StoryDynamicScene): void {
@@ -30,7 +27,7 @@ export class VideoScene extends Phaser.Scene {
     this.scene.setVisible(false, "GameStateScene");
     var video = document.createElement("video");
 
-    video.src = "../assets/01.mp4";
+    video.src = require("../assets/01.mp4");
     video.width = 960;
     video.height = 600;
     video.autoplay = true;

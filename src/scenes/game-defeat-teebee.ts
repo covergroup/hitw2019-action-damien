@@ -55,13 +55,12 @@ export class DefeatTeebeeScene extends Phaser.Scene implements SceneCommon {
   preload(): void {
     this.load.image(
       "scene-bg-defeat",
-      "../assets/game-defeat-teebee-background.png"
+      require("../assets/game-defeat-teebee-background.png")
     );
-    this.load.image("bacteria", "../assets/bacteria.png");
-    this.load.audio("shoot", ["../assets/shoot.wav", "../assets/shoot.wav"]);
+    this.load.image("bacteria", require("../assets/bacteria.png"));
+    this.load.audio("shoot", [require("../assets/shoot.wav")]);
     this.load.audio("ambiance-sound-ktb", [
-      "../assets/KTB_Backsound.mp3",
-      "../assets/KTB_Backsound.wav"
+      require("../assets/KTB_Backsound.mp3")
     ]);
   }
 
