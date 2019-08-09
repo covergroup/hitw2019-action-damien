@@ -109,12 +109,12 @@ export class DynamicScene extends Phaser.Scene implements SceneCommon {
       );
     }
 
-    this.load.image(`parchment`, require(`${this.imageBasePath}parchment.png`));
+    this.load.image(`parchment`, require("../assets/parchment.png"));
 
     if (this.storyData.image) {
       this.load.image(
         `mainImage`,
-        require(`${this.imageBasePath}${this.storyData.image}`)
+        require("../assets/${this.storyData.image}")
       );
     }
 
