@@ -20,7 +20,6 @@ export class YouLooseScene extends Phaser.Scene {
   }
 
   preload(): void {
-    
     this.load.image(
       "scene-bg-loose",
       require("../assets/game-youloose-background.jpg")
@@ -30,10 +29,7 @@ export class YouLooseScene extends Phaser.Scene {
       require("../assets/azo-fire.png"),
       require("../assets/azo-fire.xml")
     );
-    this.load.audio("loose", [
-      require("../assets/albinoni.wav"),
-      require("../assets/albinoni.wav")
-    ]);
+    this.load.audio("loose", [require("../assets/albinoni.mp3")]);
   }
 
   init(): void {
