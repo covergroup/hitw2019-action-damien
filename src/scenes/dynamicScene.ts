@@ -109,7 +109,7 @@ export class DynamicScene extends Phaser.Scene implements SceneCommon {
     }
 
     // this.load.image(`bus`, require("../assets/bus.svg"));
-    // this.load.image(`medicalCenter`, require("../assets/CentreMedical_Cartoon.png"));
+    //this.load.image(`medicalCenter`,crequire("../assets/CentreMedical_Cartoon.jpg"));
     // this.load.image(`fermier`, require("../assets/Fermier.svg"));
     // this.load.image(`guerrisseur`, require("../assets/Guerrisseur.png"));
     // this.load.image(`herbs`, require("../assets/herbs.svg"));

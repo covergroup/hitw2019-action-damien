@@ -20,7 +20,7 @@ export class YouWinScene extends Phaser.Scene {
   }
 
   preload(): void {
-    this.load.image("scene-bg-loose", require("../assets/Fin_Heureuse.png"));
+    this.load.image("scene-bg-loose", require("../assets/Fin_Heureuse.jpg"));
     this.load.bitmapFont(
       "azoFire",
       require("../assets/azo-fire.png"),
