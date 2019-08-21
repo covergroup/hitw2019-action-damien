@@ -17,19 +17,19 @@ export class DefeatTeebeeScene extends Phaser.Scene implements SceneCommon {
   private lifeBackground: Phaser.GameObjects.Sprite;
   private enemiesLocations = [
     //Right
-    [60, 60],
-    [40, 78],
-    [65, 75],
-    [35, 100],
-    [55, 95],
-    [45, 115],
+    [65, 70],
+    [45, 88],
+    [78, 85],
+    [40, 110],
+    [75, 105],
+    [65, 125],
     //Left
-    [120, 60],
-    [110, 78],
-    [130, 75],
-    [110, 100],
-    [135, 95],
-    [135, 115]
+    [155, 70],
+    [140, 88],
+    [175, 85],
+    [145, 110],
+    [175, 105],
+    [165, 125]
   ];
   private enemies = [];
   private enemyKilled = true;
