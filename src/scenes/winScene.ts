@@ -19,8 +19,16 @@ export class YouWinScene extends Phaser.Scene {
     });
   }
 
+  computeScaleX(width, itemWidth): number {
+    return width / itemWidth;
+  }
+
+  computeScaleY(scaleX, height, itemHeight): number {
+    return scaleX; //height/(itemHeight*scaleX);
+  }
+
   preload(): void {
-    this.load.image("scene-bg-loose", require("../assets/Fin_Heureuse.jpg"));
+    this.load.image("scene-bg-win", require("../assets/Fin_Heureuse.jpg"));
     this.load.bitmapFont(
       "azoFire",
       require("../assets/azo-fire.png"),
@@ -39,10 +47,22 @@ export class YouWinScene extends Phaser.Scene {
   }
 
   create(): void {
-    this.add.sprite(
-      this.posInPct(this.gameWidth, 50),
-      this.posInPct(this.gameHeight, 50),
-      "scene-bg-loose"
+    let sprite = null;
+
+    sprite = this.add.sprite(0, 0, `scene-bg-win`);
+
+    let scaleX = this.computeScaleX(this.cameras.main.width, sprite.width);
+    let scaleY = this.computeScaleY(
+      scaleX,
+      this.cameras.main.height / 2,
+      sprite.height
+    );
+    console.log(`ScaleX : ${scaleX} ScaleY : ${scaleY}`);
+    sprite.setScale(scaleX, scaleY);
+
+    sprite.setPosition(
+      this.cameras.main.width / 2,
+      (sprite.height * scaleY) / 2
     );
 
     this.winText = this.add.bitmapText(

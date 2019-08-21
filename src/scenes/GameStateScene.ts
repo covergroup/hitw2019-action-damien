@@ -46,14 +46,14 @@ export class GameStateScene extends Phaser.Scene {
     );
 
     this.moneyBoardText = this.add.bitmapText(
-      this.posInPct(this.gameWidth, 44),
+      this.posInPct(this.gameWidth, 45),
       this.posInPct(this.gameHeight, -1),
       "azoFire",
       "",
       50
     );
     this.timeBoardText = this.add.bitmapText(
-      this.posInPct(this.gameWidth, 75),
+      this.posInPct(this.gameWidth, 68),
       this.posInPct(this.gameHeight, -1),
       "azoFire",
       "",
@@ -79,7 +79,7 @@ export class GameStateScene extends Phaser.Scene {
     lifebarDecrease.fillStyle(0xe91e63, 1);
     lifebar.fillStyle(0xffffff, 1);
     lifebar.fillRoundedRect(
-      this.posInPct(this.gameWidth, 12),
+      this.posInPct(this.gameWidth, 22),
       this.posInPct(this.gameHeight, 1),
       200,
       40,
@@ -87,7 +87,7 @@ export class GameStateScene extends Phaser.Scene {
     );
 
     lifebarDecrease.fillRoundedRect(
-      this.posInPct(this.gameWidth, 12),
+      this.posInPct(this.gameWidth, 22),
       this.posInPct(this.gameHeight, 1),
       this.playerData.health * 2,
       40,

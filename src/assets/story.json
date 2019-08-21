@@ -7,7 +7,7 @@
   {
     "accessImage": "Medecin.f9049a43.png",
     "accessQuestion": "Je décide de suivre la phase de traitement de 6 mois",
-    "image": "CentreMedical_Cartoon.10d30977.png",
+    "image": "CentreMedical_Cartoon.94503ba6.jpg",
     "text": "Le traitement suit sont cours, la prise de médicament est journalière",
     "days": 1,
     "health": -10,
@@ -21,7 +21,7 @@
     "children": [4, 8, 5]
   },
   {
-    "image": "CentreMedical_Cartoon.10d30977.png",
+    "image": "CentreMedical_Cartoon.94503ba6.jpg",
     "text": "Le medecin vous osculte, les analyses prennent plusieurs jours.... J'ai le résultat de vos analyses. Il s'agit de la tuberculose. Nous avons un traitement anti-microbien gratuit, il faudra le prendre pendant 6 mois.",
     "children": [9, 1]
   },

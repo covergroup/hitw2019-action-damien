@@ -52,6 +52,14 @@ export class DefeatTeebeeScene extends Phaser.Scene implements SceneCommon {
     });
   }
 
+  computeScaleX(width, itemWidth): number {
+    return width / itemWidth;
+  }
+
+  computeScaleY(scaleX, height, itemHeight): number {
+    return scaleX; //height/(itemHeight*scaleX);
+  }
+
   preload(): void {
     this.load.image(
       "scene-bg-defeat",
@@ -73,10 +81,22 @@ export class DefeatTeebeeScene extends Phaser.Scene implements SceneCommon {
   }
 
   create(): void {
-    this.add.sprite(
-      this.posInPct(this.gameWidth, 50),
-      this.posInPct(this.gameHeight, 50),
-      "scene-bg-defeat"
+    let sprite = null;
+
+    sprite = this.add.sprite(0, 0, `scene-bg-defeat`);
+
+    let scaleX = this.computeScaleX(this.cameras.main.width, sprite.width);
+    let scaleY = this.computeScaleY(
+      (scaleX / 3) * 2.2,
+      this.cameras.main.height / 2,
+      sprite.height
+    );
+
+    sprite.setScale(scaleX, scaleY);
+    console.log(`ScaleX : ${scaleX} ScaleY : ${scaleY}`);
+    sprite.setPosition(
+      this.cameras.main.width / 2,
+      (sprite.height * scaleY) / 2
     );
 
     this.shootSound = this.sound.add("shoot");

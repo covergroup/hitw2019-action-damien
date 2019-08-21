@@ -21,6 +21,7 @@
     "@types/webpack-env": "^1.13.9",
     "colors.css": "^3.0.0",
     "phaser": "3.16.2",
+    "phaser3-rex-plugins": "^1.0.0",
     "typescript": "^3.4.5"
   },
   "devDependencies": {

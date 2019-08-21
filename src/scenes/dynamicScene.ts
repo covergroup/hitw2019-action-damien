@@ -108,18 +108,21 @@ export class DynamicScene extends Phaser.Scene implements SceneCommon {
       );
     }
 
-    // this.load.image(`bus`, require("../assets/bus.svg"));
-    //this.load.image(`medicalCenter`,crequire("../assets/CentreMedical_Cartoon.jpg"));
-    // this.load.image(`fermier`, require("../assets/Fermier.svg"));
-    // this.load.image(`guerrisseur`, require("../assets/Guerrisseur.png"));
-    // this.load.image(`herbs`, require("../assets/herbs.svg"));
-    // this.load.image(`hospital`, require("../assets/hospital.svg"));
-    // this.load.image(`mask`, require("../assets/Mask.svg"));
-    // this.load.image(`pill`, require("../assets/pill.svg"));
-    // this.load.image(`stethoscope`, require("../assets/stethoscope.svg"));
-    // this.load.image(`medecin`, require("../assets/Medecin.png"));
-    // this.load.image(`village`, require("../assets/Village_Africain2.jpg"));
-    // this.load.image(`walk`, require("../assets/walk.svg"));
+    this.load.image(`bus`, require("../assets/bus.svg"));
+    this.load.image(
+      `medicalCenter`,
+      require("../assets/CentreMedical_Cartoon.jpg")
+    );
+    this.load.image(`fermier`, require("../assets/Fermier.svg"));
+    this.load.image(`guerrisseur`, require("../assets/Guerrisseur.png"));
+    this.load.image(`herbs`, require("../assets/herbs.svg"));
+    this.load.image(`hospital`, require("../assets/hospital.svg"));
+    this.load.image(`mask`, require("../assets/Mask.svg"));
+    this.load.image(`pill`, require("../assets/pill.svg"));
+    this.load.image(`stethoscope`, require("../assets/stethoscope.svg"));
+    this.load.image(`medecin`, require("../assets/Medecin.png"));
+    this.load.image(`village`, require("../assets/Village_Africain2.jpg"));
+    this.load.image(`walk`, require("../assets/walk.svg"));
     this.load.image(`parchment`, require("../assets/parchment.png"));
 
     if (this.storyData.image) {

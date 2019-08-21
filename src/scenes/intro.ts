@@ -18,6 +18,14 @@ export class IntroScene extends Phaser.Scene {
     });
   }
 
+  computeScaleX(width, itemWidth): number {
+    return width / itemWidth;
+  }
+
+  computeScaleY(scaleX, height, itemHeight): number {
+    return scaleX; //height/(itemHeight*scaleX);
+  }
+
   preload(): void {
     this.load.image("scene-bg", require("/assets/intro-background.jpg"));
     this.load.image("logo-damien", require("/assets/logo_Action_damien.jpg"));
@@ -31,11 +39,24 @@ export class IntroScene extends Phaser.Scene {
   }
 
   create(): void {
-    this.sceneBackground = this.add.sprite(
-      this.gameWidth / 2,
-      this.gameHeight / 2,
-      "scene-bg"
+    let sprite = null;
+
+    sprite = this.add.sprite(0, 0, `scene-bg`);
+
+    let scaleX = this.computeScaleX(this.cameras.main.width, sprite.width);
+    let scaleY = this.computeScaleY(
+      scaleX,
+      this.cameras.main.height / 2,
+      sprite.height
     );
+    console.log(`ScaleX : ${scaleX} ScaleY : ${scaleY}`);
+    sprite.setScale(scaleX, scaleY);
+
+    sprite.setPosition(
+      this.cameras.main.width / 2,
+      (sprite.height * scaleY) / 2
+    );
+
     this.actionDamienSprite = this.add.sprite(
       this.gameWidth / 2,
       this.gameHeight / 2,
